@@ -1,0 +1,20 @@
+@charset "UFT-8"
+
+.fundo {
+	/*margin: 0,50px,0,50px;*/
+	width: 800px;
+	height: 800px;
+	background-color:#dddddd;
+}
+
+figure.imagem img{
+	text-align: center;
+	margin: 50px 50px 0 50px;
+	width: 200px;
+	height:200px;
+	border-radius: 100px;
+}
+
+.container{
+	margin-top: 50px;
+}
