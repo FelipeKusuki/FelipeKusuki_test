@@ -6,8 +6,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-<script src="../js/src/funcoes.js"></script>
-<script src="../js/src/validator.min.js"></script>
+
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
@@ -18,7 +17,7 @@
     <!--Comeco do menu -->
 
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <a class="navbar-brand" href="#">Corridas</a>
+  <a class="navbar-brand" href="index.html">Corridas</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -56,23 +55,26 @@
 
 <!-- Comeco do Formulario -->
 <div class="container">
-  <form id="Cadastro_moto" data-toggle="validator" role="form">
+  <form id="Cadastro_corr" data-toggle="validator" role="form">
     <div class="form-group">
       <label for="textNome" class="control-label">Nome do Motorista</label>
-      <input id="textNome" class="form-control" placeholder="Digite o nome do motorista" type="text">
+      <input id="textNome" class="form-control" placeholder="Digite o nome do motorista" type="text" data-error=" Nome não foi preenchido corretamente" required>
+      <div class="help-block with-errors"></div>
     </div>
     
     <div class="form-group">
       <label for="nome_pass" class="control-label">Nome do Passageiro</label>
-      <input id="nome_pass" class="form-control" placeholder="Digite o nome do passageiro" type="text">
+      <input id="nome_pass" class="form-control" placeholder="Digite o nome do passageiro" type="text" data-error=" Nome não foi preenchido corretamente" required>
+      <div class="help-block with-errors"></div>
     </div>
 
     <div class="form-group">
       <label for="Valor" class="control-label">Valor da corrida</label>
-      <input id="Valor" class="form-control" placeholder="Valor da Corrida" type="text">
+      <input id="Valor" class="form-control" placeholder="Valor da Corrida" type="text" data-error=" Valor não foi preenchido corretamente" required>
+      <div class="help-block with-errors"></div>
     </div>
     
-    <button type="submit" class="btn btn-primary" onclick="mensagem()">Enviar</button>
+    <button type="button" class="btn btn-primary" onclick="checaCorr()">Enviar</button>
   </form>
 </div>
 <!-- Fim do Formulario -->
@@ -82,6 +84,10 @@
 		    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 		    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
 		    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+
+		    <script src="../js/src/validator.min.js"></script>
+		    <script src="../js/src/funcoes.js"></script>
+			
 	
   </body>
 </html>
